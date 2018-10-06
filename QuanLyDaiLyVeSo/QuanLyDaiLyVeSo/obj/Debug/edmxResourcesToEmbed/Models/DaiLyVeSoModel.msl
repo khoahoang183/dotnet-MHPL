@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAILYVESOModelStoreContainer" CdmEntityContainer="DAILYVESOEntities">
+    <EntitySetMapping Name="DAILies">
+      <EntityTypeMapping TypeName="DAILYVESOModel.DAILY">
+        <MappingFragment StoreEntitySet="DAILY">
+          <ScalarProperty Name="MADL" ColumnName="MADL" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAIs">
+      <EntityTypeMapping TypeName="DAILYVESOModel.GIAI">
+        <MappingFragment StoreEntitySet="GIAI">
+          <ScalarProperty Name="MAGIAI" ColumnName="MAGIAI" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KETQUAs">
+      <EntityTypeMapping TypeName="DAILYVESOModel.KETQUA">
+        <MappingFragment StoreEntitySet="KETQUA">
+          <ScalarProperty Name="MAKQ" ColumnName="MAKQ" />
+          <ScalarProperty Name="MAVS" ColumnName="MAVS" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="MAGIAI" ColumnName="MAGIAI" />
+          <ScalarProperty Name="SOTRUNG" ColumnName="SOTRUNG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHANPHOIs">
+      <EntityTypeMapping TypeName="DAILYVESOModel.PHANPHOI">
+        <MappingFragment StoreEntitySet="PHANPHOI">
+          <ScalarProperty Name="MAPP" ColumnName="MAPP" />
+          <ScalarProperty Name="MAVS" ColumnName="MAVS" />
+          <ScalarProperty Name="MADL" ColumnName="MADL" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="SLGIAO" ColumnName="SLGIAO" />
+          <ScalarProperty Name="SLBAN" ColumnName="SLBAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIEUCHIs">
+      <EntityTypeMapping TypeName="DAILYVESOModel.PHIEUCHI">
+        <MappingFragment StoreEntitySet="PHIEUCHI">
+          <ScalarProperty Name="MAPC" ColumnName="MAPC" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="TIEN" ColumnName="TIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIEUTHUs">
+      <EntityTypeMapping TypeName="DAILYVESOModel.PHIEUTHU">
+        <MappingFragment StoreEntitySet="PHIEUTHU">
+          <ScalarProperty Name="MAPT" ColumnName="MAPT" />
+          <ScalarProperty Name="MADL" ColumnName="MADL" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="TIEN" ColumnName="TIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLUONGDANGKies">
+      <EntityTypeMapping TypeName="DAILYVESOModel.SOLUONGDANGKY">
+        <MappingFragment StoreEntitySet="SOLUONGDANGKY">
+          <ScalarProperty Name="MASLDK" ColumnName="MASLDK" />
+          <ScalarProperty Name="MADL" ColumnName="MADL" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="SLDANGKY" ColumnName="SLDANGKY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DAILYVESOModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VESOes">
+      <EntityTypeMapping TypeName="DAILYVESOModel.VESO">
+        <MappingFragment StoreEntitySet="VESO">
+          <ScalarProperty Name="MAVS" ColumnName="MAVS" />
+          <ScalarProperty Name="TINH" ColumnName="TINH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="DAILYVESOModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="DAILYVESOModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="DAILYVESOModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="DAILYVESOModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DAILYVESOModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="DAILYVESOModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DAILYVESOModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DAILYVESOModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DAILYVESOModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

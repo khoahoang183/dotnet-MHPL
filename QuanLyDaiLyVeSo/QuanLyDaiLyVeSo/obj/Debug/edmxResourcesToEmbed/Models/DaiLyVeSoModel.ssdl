@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAILYVESOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DAILY">
+    <Key>
+      <PropertyRef Name="MADL" />
+    </Key>
+    <Property Name="MADL" Type="int" Nullable="false" />
+    <Property Name="TEN" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIAI">
+    <Key>
+      <PropertyRef Name="MAGIAI" />
+    </Key>
+    <Property Name="MAGIAI" Type="int" Nullable="false" />
+    <Property Name="TEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KETQUA">
+    <Key>
+      <PropertyRef Name="MAKQ" />
+    </Key>
+    <Property Name="MAKQ" Type="int" Nullable="false" />
+    <Property Name="MAVS" Type="int" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="MAGIAI" Type="int" />
+    <Property Name="SOTRUNG" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="PHANPHOI">
+    <Key>
+      <PropertyRef Name="MAPP" />
+    </Key>
+    <Property Name="MAPP" Type="int" Nullable="false" />
+    <Property Name="MAVS" Type="int" />
+    <Property Name="MADL" Type="int" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="SLGIAO" Type="int" />
+    <Property Name="SLBAN" Type="int" />
+  </EntityType>
+  <EntityType Name="PHIEUCHI">
+    <Key>
+      <PropertyRef Name="MAPC" />
+    </Key>
+    <Property Name="MAPC" Type="int" Nullable="false" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="TIEN" Type="money" />
+  </EntityType>
+  <EntityType Name="PHIEUTHU">
+    <Key>
+      <PropertyRef Name="MAPT" />
+    </Key>
+    <Property Name="MAPT" Type="int" Nullable="false" />
+    <Property Name="MADL" Type="int" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="TIEN" Type="money" />
+  </EntityType>
+  <EntityType Name="SOLUONGDANGKY">
+    <Key>
+      <PropertyRef Name="MASLDK" />
+    </Key>
+    <Property Name="MASLDK" Type="int" Nullable="false" />
+    <Property Name="MADL" Type="int" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="SLDANGKY" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="VESO">
+    <Key>
+      <PropertyRef Name="MAVS" />
+    </Key>
+    <Property Name="MAVS" Type="int" Nullable="false" />
+    <Property Name="TINH" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_KETQUA_MAGIAI">
+    <End Role="GIAI" Type="Self.GIAI" Multiplicity="0..1" />
+    <End Role="KETQUA" Type="Self.KETQUA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAI">
+        <PropertyRef Name="MAGIAI" />
+      </Principal>
+      <Dependent Role="KETQUA">
+        <PropertyRef Name="MAGIAI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KETQUA_MAVS">
+    <End Role="VESO" Type="Self.VESO" Multiplicity="0..1" />
+    <End Role="KETQUA" Type="Self.KETQUA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VESO">
+        <PropertyRef Name="MAVS" />
+      </Principal>
+      <Dependent Role="KETQUA">
+        <PropertyRef Name="MAVS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHANPHOI_MADL">
+    <End Role="DAILY" Type="Self.DAILY" Multiplicity="0..1" />
+    <End Role="PHANPHOI" Type="Self.PHANPHOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DAILY">
+        <PropertyRef Name="MADL" />
+      </Principal>
+      <Dependent Role="PHANPHOI">
+        <PropertyRef Name="MADL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHANPHOI_MAVS">
+    <End Role="VESO" Type="Self.VESO" Multiplicity="0..1" />
+    <End Role="PHANPHOI" Type="Self.PHANPHOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VESO">
+        <PropertyRef Name="MAVS" />
+      </Principal>
+      <Dependent Role="PHANPHOI">
+        <PropertyRef Name="MAVS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHIEUTHU_MADL">
+    <End Role="DAILY" Type="Self.DAILY" Multiplicity="0..1" />
+    <End Role="PHIEUTHU" Type="Self.PHIEUTHU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DAILY">
+        <PropertyRef Name="MADL" />
+      </Principal>
+      <Dependent Role="PHIEUTHU">
+        <PropertyRef Name="MADL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SOLUONGDANGKY_MADL">
+    <End Role="DAILY" Type="Self.DAILY" Multiplicity="0..1" />
+    <End Role="SOLUONGDANGKY" Type="Self.SOLUONGDANGKY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DAILY">
+        <PropertyRef Name="MADL" />
+      </Principal>
+      <Dependent Role="SOLUONGDANGKY">
+        <PropertyRef Name="MADL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DAILYVESOModelStoreContainer">
+    <EntitySet Name="DAILY" EntityType="Self.DAILY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIAI" EntityType="Self.GIAI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KETQUA" EntityType="Self.KETQUA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHANPHOI" EntityType="Self.PHANPHOI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHIEUCHI" EntityType="Self.PHIEUCHI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHIEUTHU" EntityType="Self.PHIEUTHU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SOLUONGDANGKY" EntityType="Self.SOLUONGDANGKY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VESO" EntityType="Self.VESO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_KETQUA_MAGIAI" Association="Self.FK_KETQUA_MAGIAI">
+      <End Role="GIAI" EntitySet="GIAI" />
+      <End Role="KETQUA" EntitySet="KETQUA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KETQUA_MAVS" Association="Self.FK_KETQUA_MAVS">
+      <End Role="VESO" EntitySet="VESO" />
+      <End Role="KETQUA" EntitySet="KETQUA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHANPHOI_MADL" Association="Self.FK_PHANPHOI_MADL">
+      <End Role="DAILY" EntitySet="DAILY" />
+      <End Role="PHANPHOI" EntitySet="PHANPHOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHANPHOI_MAVS" Association="Self.FK_PHANPHOI_MAVS">
+      <End Role="VESO" EntitySet="VESO" />
+      <End Role="PHANPHOI" EntitySet="PHANPHOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHIEUTHU_MADL" Association="Self.FK_PHIEUTHU_MADL">
+      <End Role="DAILY" EntitySet="DAILY" />
+      <End Role="PHIEUTHU" EntitySet="PHIEUTHU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SOLUONGDANGKY_MADL" Association="Self.FK_SOLUONGDANGKY_MADL">
+      <End Role="DAILY" EntitySet="DAILY" />
+      <End Role="SOLUONGDANGKY" EntitySet="SOLUONGDANGKY" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
