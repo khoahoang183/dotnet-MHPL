@@ -1,0 +1,11 @@
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\Model.dll.config
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\Model.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\Model.pdb
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CopyComplete
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.pdb

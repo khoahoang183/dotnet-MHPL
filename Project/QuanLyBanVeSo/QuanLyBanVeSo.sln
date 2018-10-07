@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanVeSo", "QuanLyBanVeSo\QuanLyBanVeSo.csproj", "{F4DD872A-B714-409A-83E3-3444774B0FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{7EFA5FAB-B1C3-4E70-83C5-124554DCDE39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4DD872A-B714-409A-83E3-3444774B0FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DD872A-B714-409A-83E3-3444774B0FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DD872A-B714-409A-83E3-3444774B0FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DD872A-B714-409A-83E3-3444774B0FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFA5FAB-B1C3-4E70-83C5-124554DCDE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFA5FAB-B1C3-4E70-83C5-124554DCDE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFA5FAB-B1C3-4E70-83C5-124554DCDE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFA5FAB-B1C3-4E70-83C5-124554DCDE39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1283FB7A-BCD9-454D-B252-5736F19516C5}
+	EndGlobalSection
+EndGlobal
