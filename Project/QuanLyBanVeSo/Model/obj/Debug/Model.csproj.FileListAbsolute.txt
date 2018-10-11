@@ -9,3 +9,8 @@ F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CoreCompileInp
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CopyComplete
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.dll
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.pdb
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csprojAssemblyReference.cache

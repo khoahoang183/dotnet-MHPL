@@ -37,6 +37,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -50,13 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\GiaiDAO.cs" />
     <Compile Include="EF\DAILY.cs" />
     <Compile Include="EF\GIAI.cs" />
     <Compile Include="EF\KETQUA.cs" />
     <Compile Include="EF\PHANPHOI.cs" />
     <Compile Include="EF\PHIEUCHI.cs" />
     <Compile Include="EF\PHIEUTHU.cs" />
-    <Compile Include="EF\QuanLyBanVeSoDbContext.cs" />
+    <Compile Include="EF\QuanLyBanVeSo.cs" />
     <Compile Include="EF\SOLUONGDANGKY.cs" />
     <Compile Include="EF\VESO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,7 +73,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAO\" />
+    <Content Include="Content\PagedList.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

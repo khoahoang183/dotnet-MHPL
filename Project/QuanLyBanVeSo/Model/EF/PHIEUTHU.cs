@@ -10,7 +10,6 @@ namespace Model.EF
     public partial class PHIEUTHU
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MAPT { get; set; }
 
         public int? MADL { get; set; }

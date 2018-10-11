@@ -94,3 +94,9 @@ F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.cspro
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csproj.CopyComplete
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.dll
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.pdb
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\EntityFramework.SqlServer.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\EntityFramework.SqlServer.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\PagedList.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\PagedList.Mvc.dll
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\PagedList.xml
+F:\GitHub\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\PagedList.Mvc.xml

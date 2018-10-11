@@ -10,7 +10,6 @@ namespace Model.EF
     public partial class PHIEUCHI
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MAPC { get; set; }
 
         [Column(TypeName = "date")]

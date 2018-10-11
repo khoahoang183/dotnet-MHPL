@@ -17,7 +17,6 @@ namespace Model.EF
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MAVS { get; set; }
 
         [StringLength(100)]

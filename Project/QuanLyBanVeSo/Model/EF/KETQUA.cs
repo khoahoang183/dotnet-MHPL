@@ -10,7 +10,6 @@ namespace Model.EF
     public partial class KETQUA
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MAKQ { get; set; }
 
         public int? MAVS { get; set; }

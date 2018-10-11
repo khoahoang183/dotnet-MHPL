@@ -10,7 +10,6 @@ namespace Model.EF
     public partial class PHANPHOI
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MAPP { get; set; }
 
         public int? MAVS { get; set; }

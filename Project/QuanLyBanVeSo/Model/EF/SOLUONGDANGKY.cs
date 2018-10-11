@@ -10,7 +10,6 @@ namespace Model.EF
     public partial class SOLUONGDANGKY
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MASLDK { get; set; }
 
         public int? MADL { get; set; }
