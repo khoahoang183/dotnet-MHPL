@@ -1,4 +1,4 @@
-namespace Model.EF
+﻿namespace Model.EF
 {
     using System;
     using System.Collections.Generic;
@@ -15,13 +15,15 @@ namespace Model.EF
             KETQUAs = new HashSet<KETQUA>();
             PHANPHOIs = new HashSet<PHANPHOI>();
         }
-
+        
         [Key]
+        [Display(Name = "Mã Vé")]
         public int MAVS { get; set; }
-
+        
         [StringLength(100)]
+        [Display(Name = "Tỉnh")]
         public string TINH { get; set; }
-
+        [Display(Name = "Tình Trạng")]
         public int? TINHTRANG { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -14,3 +14,25 @@ F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.dll
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.xml
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.xml
 F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\Model.dll.config
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\Model.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\Model.pdb
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.WebPages.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.Razor.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\PagedList.Mvc.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.WebPages.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.Razor.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.dll
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.pdb
