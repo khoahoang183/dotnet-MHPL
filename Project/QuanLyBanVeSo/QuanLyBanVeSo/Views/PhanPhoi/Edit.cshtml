@@ -1,0 +1,105 @@
+﻿@model Model.EF.PHANPHOI
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Cập Nhật Phân Phối</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Nhập Thông Tin Phân Phối
+            </div>
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm("Edit", "PhanPhoi", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MAPP, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.MAPP, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                @Html.ValidationMessageFor(model => model.MAPP, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MAVS, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.MAVS, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MAVS, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MADL, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.MADL, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MADL, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.NGAY, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.NGAY, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.NGAY, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.SLGIAO, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.SLGIAO, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.SLGIAO, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.SLBAN, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.SLBAN, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.SLBAN, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TINHTRANG, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                                @Html.TextBoxFor(model => model.TINHTRANG, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TINHTRANG, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Cập Nhật" class="btn btn-default" />
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    @Html.ActionLink("Quay Về Danh Sách", "Index")
+</div>

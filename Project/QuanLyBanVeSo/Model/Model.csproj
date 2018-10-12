@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\GiaiDAO.cs" />
+    <Compile Include="DAO\PhanPhoiDAO.cs" />
     <Compile Include="DAO\VeSoDAO.cs" />
     <Compile Include="EF\DAILY.cs" />
     <Compile Include="EF\GIAI.cs" />

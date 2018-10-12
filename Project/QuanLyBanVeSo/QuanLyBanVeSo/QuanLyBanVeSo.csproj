@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GiaiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhanPhoiController.cs" />
     <Compile Include="Controllers\VESOesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -371,6 +372,9 @@
     <Content Include="Views\VeSo\Create.cshtml" />
     <Content Include="Views\VeSo\Edit.cshtml" />
     <Content Include="Views\VeSo\Index.cshtml" />
+    <Content Include="Views\PhanPhoi\Create.cshtml" />
+    <Content Include="Views\PhanPhoi\Edit.cshtml" />
+    <Content Include="Views\PhanPhoi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
