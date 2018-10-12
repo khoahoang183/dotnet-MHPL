@@ -1,4 +1,4 @@
-﻿@model Model.EF.VESO
+﻿@model Model.EF.SOLUONGDANGKY
 
 @{
     ViewBag.Title = "Create";
@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Thêm Mới Vé Số</h1>
+        <h1 class="page-header">Thêm Mới Số Lượng Đăng Ký</h1>
     </div>
     <!-- /.col-lg-12 -->
 </div>
@@ -16,32 +16,32 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Nhập Thông Tin Vé
+                Nhập Thông Tin Số Lượng Đăng Ký
             </div>
 
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        @using (Html.BeginForm("Create", "VeSo", FormMethod.Post))
+                        @using (Html.BeginForm("Create", "SoLuongDangKy", FormMethod.Post))
                         {
                             @Html.AntiForgeryToken()
 
                             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
+                     <div class="form-group">
+                        @Html.LabelFor(model => model.MADL, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                        @Html.DropDownListFor(model=>model.MADL, null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.MADL, "", new { @class = "text-danger" })
+
+                    </div>
+
                             <div class="form-group">
-                                @Html.LabelFor(model => model.TINH, htmlAttributes: new { @class = "control-label col-md-3" })
+                                @Html.LabelFor(model => model.SLDANGKY, htmlAttributes: new { @class = "control-label col-md-3" })
 
-                                @Html.TextBoxFor(model => model.TINH, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.TINH, "", new { @class = "text-danger" })
-
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.TINHTRANG, htmlAttributes: new { @class = "control-label col-md-3" })
-
-                                @Html.TextBoxFor(model => model.TINHTRANG, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.TINHTRANG, "", new { @class = "text-danger" })
+                                @Html.TextBoxFor(model => model.SLDANGKY, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.SLDANGKY, "", new { @class = "text-danger" })
 
                             </div>
 

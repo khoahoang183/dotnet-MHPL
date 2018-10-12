@@ -8,13 +8,13 @@ using Model.DAO;
 
 namespace QuanLyBanVeSo.Controllers
 {
-    public class VeSoController : Controller
+    public class DaiLyController : Controller
 
     {
-        // GET: Giai
+        // GET: DaiLy
         public ActionResult Index(string searchString, int page = 1, int pageSize = 8)
         {
-            var dao = new Model.DAO.VeSoDAO();
+            var dao = new Model.DAO.DaiLyDAO();
             var model = dao.listAllPaging(searchString, page, pageSize);
             return View(model);
         }
@@ -26,38 +26,38 @@ namespace QuanLyBanVeSo.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var veso = new VeSoDAO().ViewDetail(id);
-            return View(veso);
+            var daily = new DaiLyDAO().ViewDetail(id);
+            return View(daily);
         }
 
         [HttpPost]
-        public ActionResult Create(VESO veso)
+        public ActionResult Create(DAILY daily)
         {
             if (ModelState.IsValid)
             {
-                var dao = new Model.DAO.VeSoDAO();
-                long id = dao.Insert(veso);
+                var dao = new Model.DAO.DaiLyDAO();
+                long id = dao.Insert(daily);
                 if (id > 0) // if insert success, back to index
                 {
-                    return RedirectToAction("Index", "VeSo");
+                    return RedirectToAction("Index", "DaiLy");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Thêm Vé Số Thất Bại!");
+                    ModelState.AddModelError("", "Thêm Đại lý Thất Bại!");
                 }
             }
             return View("Index");
         }
         [HttpPost]
-        public ActionResult Edit(VESO veso)
+        public ActionResult Edit(DAILY daily)
         {
             if (ModelState.IsValid)
             {
-                var dao = new Model.DAO.VeSoDAO();
-                var result = dao.Update(veso);
+                var dao = new Model.DAO.DaiLyDAO();
+                var result = dao.Update(daily);
                 if (result) // if update success, back to index
                 {
-                    return RedirectToAction("Index", "VeSo");
+                    return RedirectToAction("Index", "DaiLy");
                 }
                 else
                 {
@@ -69,9 +69,9 @@ namespace QuanLyBanVeSo.Controllers
         [HttpDelete]
         public ActionResult Delete(int id)
         {
-            var dao = new Model.DAO.VeSoDAO();
+            var dao = new Model.DAO.DaiLyDAO();
             var result = dao.Delete(id);
-            return RedirectToAction("Index", "VeSo");
+            return RedirectToAction("Index", "DaiLy");
 
         }
 

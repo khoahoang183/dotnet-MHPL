@@ -159,9 +159,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DAILiesController.cs" />
     <Compile Include="Controllers\GiaiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhanPhoiController.cs" />
+    <Compile Include="Controllers\SOLUONGDANGKiesController.cs" />
     <Compile Include="Controllers\VESOesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -375,6 +377,12 @@
     <Content Include="Views\PhanPhoi\Create.cshtml" />
     <Content Include="Views\PhanPhoi\Edit.cshtml" />
     <Content Include="Views\PhanPhoi\Index.cshtml" />
+    <Content Include="Views\DaiLy\Create.cshtml" />
+    <Content Include="Views\DaiLy\Edit.cshtml" />
+    <Content Include="Views\DaiLy\Index.cshtml" />
+    <Content Include="Views\SoLuongDangKy\Create.cshtml" />
+    <Content Include="Views\SoLuongDangKy\Edit.cshtml" />
+    <Content Include="Views\SoLuongDangKy\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

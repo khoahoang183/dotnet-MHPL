@@ -8,56 +8,59 @@ using Model.DAO;
 
 namespace QuanLyBanVeSo.Controllers
 {
-    public class VeSoController : Controller
+    public class SoLuongDangKyController : Controller
 
     {
-        // GET: Giai
+        // GET: SoLuongDangKy
         public ActionResult Index(string searchString, int page = 1, int pageSize = 8)
         {
-            var dao = new Model.DAO.VeSoDAO();
+            var dao = new Model.DAO.SoLuongDangKyDAO();
             var model = dao.listAllPaging(searchString, page, pageSize);
             return View(model);
         }
         [HttpGet]
         public ActionResult Create()
         {
+            SetViewBag();
             return View();
         }
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var veso = new VeSoDAO().ViewDetail(id);
-            return View(veso);
+            SetViewBag();
+            var soluongdangky = new SoLuongDangKyDAO().ViewDetail(id);
+            return View(soluongdangky);
         }
 
         [HttpPost]
-        public ActionResult Create(VESO veso)
+        public ActionResult Create(SOLUONGDANGKY soluongdangky)
         {
             if (ModelState.IsValid)
             {
-                var dao = new Model.DAO.VeSoDAO();
-                long id = dao.Insert(veso);
+                var dao = new Model.DAO.SoLuongDangKyDAO();
+                soluongdangky.NGAY = DateTime.Today;
+                long id = dao.Insert(soluongdangky);
                 if (id > 0) // if insert success, back to index
                 {
-                    return RedirectToAction("Index", "VeSo");
+                    return RedirectToAction("Index", "SoLuongDangKy");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Thêm Vé Số Thất Bại!");
+                    ModelState.AddModelError("", "Thêm Số Lượng Đăng Ký Thất Bại!");
                 }
             }
             return View("Index");
         }
         [HttpPost]
-        public ActionResult Edit(VESO veso)
+        public ActionResult Edit(SOLUONGDANGKY soluongdangky)
         {
             if (ModelState.IsValid)
             {
-                var dao = new Model.DAO.VeSoDAO();
-                var result = dao.Update(veso);
+                var dao = new Model.DAO.SoLuongDangKyDAO();
+                var result = dao.Update(soluongdangky);
                 if (result) // if update success, back to index
                 {
-                    return RedirectToAction("Index", "VeSo");
+                    return RedirectToAction("Index", "SoLuongDangKy");
                 }
                 else
                 {
@@ -66,14 +69,13 @@ namespace QuanLyBanVeSo.Controllers
             }
             return View("Index");
         }
-        [HttpDelete]
-        public ActionResult Delete(int id)
-        {
-            var dao = new Model.DAO.VeSoDAO();
-            var result = dao.Delete(id);
-            return RedirectToAction("Index", "VeSo");
 
+        public void SetViewBag(long? selectedID = null)
+        {
+            var dao = new DaiLyDAO();
+            ViewBag.MaDL = new SelectList(dao.GetAll(), "MaDL", "MaDL", selectedID);
         }
+
 
     }
 }
