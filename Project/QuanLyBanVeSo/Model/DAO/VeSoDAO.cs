@@ -25,6 +25,11 @@ namespace Model.DAO
         {
             return db.VESOes.Find(MaVS);
         }
+
+        public List<VESO> GetAll()
+        {
+            return db.VESOes.ToList();
+        }
         public IEnumerable<VESO> listAllPaging(string searchString, int page, int pageSize)
         {
             IQueryable<VESO> model = db.VESOes;
@@ -37,6 +42,7 @@ namespace Model.DAO
 
         public long Insert(VESO entity)
         {
+            entity.TINHTRANG = 1;
             db.VESOes.Add(entity);
             db.SaveChanges();
             return entity.MAVS;

@@ -31,7 +31,7 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.MAVS, htmlAttributes: new { @class = "control-label col-md-3" })
 
-                            @Html.TextBoxFor(model => model.MAVS, new { htmlAttributes = new { @class = "form-control" } })
+                           @Html.DropDownListFor(model => model.MAVS, null, htmlAttributes: new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.MAVS, "", new { @class = "text-danger" })
 
                         </div>
@@ -39,42 +39,18 @@
                             <div class="form-group">
                                 @Html.LabelFor(model => model.MADL, htmlAttributes: new { @class = "control-label col-md-3" })
 
-                                @Html.TextBoxFor(model => model.MADL, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DropDownListFor(model => model.MADL, null, htmlAttributes: new { @class = "form-control" })
                                 @Html.ValidationMessageFor(model => model.MADL, "", new { @class = "text-danger" })
 
                             </div>
 
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.NGAY, htmlAttributes: new { @class = "control-label col-md-3" })
+                            
 
-                                @Html.TextBoxFor(model => model.NGAY, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.NGAY, "", new { @class = "text-danger" })
+                            
 
-                            </div>
+                            
 
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.SLGIAO, htmlAttributes: new { @class = "control-label col-md-3" })
-
-                                @Html.TextBoxFor(model => model.SLGIAO, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.SLGIAO, "", new { @class = "text-danger" })
-
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.SLBAN, htmlAttributes: new { @class = "control-label col-md-3" })
-
-                                @Html.TextBoxFor(model => model.SLBAN, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.SLBAN, "", new { @class = "text-danger" })
-
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.TINHTRANG, htmlAttributes: new { @class = "control-label col-md-3" })
-
-                                @Html.TextBoxFor(model => model.TINHTRANG, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.TINHTRANG, "", new { @class = "text-danger" })
-
-                            </div>
+                            
 
                             <div class="form-group">
                                 <div class="col-md-offset-2 col-md-10">

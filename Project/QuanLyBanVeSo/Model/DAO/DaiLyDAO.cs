@@ -42,6 +42,7 @@ namespace Model.DAO
 
         public long Insert(DAILY entity)
         {
+            entity.TINHTRANG = 1;
             db.DAILies.Add(entity);
             db.SaveChanges();
             return entity.MADL;

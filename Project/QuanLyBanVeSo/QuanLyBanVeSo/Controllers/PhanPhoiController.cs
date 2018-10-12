@@ -20,13 +20,17 @@ namespace QuanLyBanVeSo.Controllers
         }
         [HttpGet]
         public ActionResult Create()
-        { 
+        {
+            SetViewBagDaiLy();
+            SetViewBagVeSo();
             return View();
         }
         [HttpGet]
         public ActionResult Edit(int id)
-        {
+        {   
             var pp = new PhanPhoiDAO().ViewDetail(id);
+            SetViewBagDaiLy();
+            SetViewBagVeSo();
             return View(pp);
         }
 
@@ -73,6 +77,17 @@ namespace QuanLyBanVeSo.Controllers
             var result = dao.Delete(id);
             return RedirectToAction("Index", "PhanPhoi");
 
+        }
+        public void SetViewBagDaiLy(long? selectedID = null)
+        {
+            var dao = new DaiLyDAO();
+            ViewBag.MaDL = new SelectList(dao.GetAll(), "MaDL", "MaDL", selectedID);
+        }
+
+        public void SetViewBagVeSo(long? selectedID = null)
+        {
+            var dao = new VeSoDAO();
+            ViewBag.MaVS = new SelectList(dao.GetAll(), "MaVS", "MaVS", selectedID);
         }
 
     }

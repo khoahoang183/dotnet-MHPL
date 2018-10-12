@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Model.EF;
 using PagedList;
 using System.Data;
+using System.Data.SqlClient;
 namespace Model.DAO
 {
     public class PhanPhoiDAO
@@ -37,6 +38,14 @@ namespace Model.DAO
 
         public long Insert(PHANPHOI entity)
         {
+            entity.TINHTRANG = 1;
+            object[] parameter =
+                {
+                new SqlParameter("@MaDL", entity.MADL)
+                };
+            entity.SLGIAO= db.Database.ExecuteSqlCommand("PROC_PHANPHOI_CALC_SLGIAO @MADL", parameter);
+            entity.SLBAN = 0;
+            entity.NGAY = DateTime.Today;
             db.PHANPHOIs.Add(entity);
             db.SaveChanges();
             return entity.MAPP;
