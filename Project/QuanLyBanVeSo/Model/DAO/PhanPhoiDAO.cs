@@ -43,7 +43,31 @@ namespace Model.DAO
                 {
                 new SqlParameter("@MaDL", entity.MADL)
                 };
-            entity.SLGIAO= db.Database.ExecuteSqlCommand("PROC_PHANPHOI_CALC_SLGIAO @MADL", parameter);
+            //entity.SLGIAO= db.Database.ExecuteSqlCommand("PROC_PHANPHOI_CALC_SLGIAO @MADL", parameter);
+
+            int soluongdangki = 0;
+            double phantramban = 0;
+
+            IQueryable<SOLUONGDANGKY> modelSOLUONGDANGKY = db.SOLUONGDANGKies.OrderByDescending(x => x.NGAY).Where(x => x.MADL == entity.MADL);
+            var itemsSOLUONGDANGKY = modelSOLUONGDANGKY.ToList().FirstOrDefault();
+            if (itemsSOLUONGDANGKY != null)
+                soluongdangki = Convert.ToInt32(itemsSOLUONGDANGKY.SLDANGKY);
+            else
+                soluongdangki = 0;
+
+            IQueryable<PHANPHOI> modelPHANPHOI = db.PHANPHOIs.OrderByDescending(x => x.NGAY).Where(x => x.MADL == entity.MADL).Where(x => x.SLBAN != 0);
+            var itemsPHANPHOI = modelPHANPHOI.ToList().Take(3);
+            int c = 0;
+            foreach (var item in itemsPHANPHOI)
+            {
+                phantramban += Convert.ToDouble(item.SLBAN) / Convert.ToDouble(item.SLGIAO);
+                c++;
+            }
+            if (c == 0)
+                entity.SLGIAO = soluongdangki;
+            else
+                entity.SLGIAO = Convert.ToInt32(phantramban / c * soluongdangki);
+
             entity.SLBAN = 0;
             entity.NGAY = DateTime.Today;
             db.PHANPHOIs.Add(entity);

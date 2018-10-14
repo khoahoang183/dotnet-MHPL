@@ -1,0 +1,16 @@
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.dll.config
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.pdb
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.Mvc.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.xml
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.xml
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.Mvc.xml
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csprojAssemblyReference.cache
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CopyComplete
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.dll
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.pdb
