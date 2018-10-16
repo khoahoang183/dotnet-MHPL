@@ -14,3 +14,18 @@ D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CopyComplete
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.dll
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.pdb
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.dll.config
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\Model.pdb
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.Mvc.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.xml
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.xml
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.Mvc.xml
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.dll
+C:\Users\Minh Khoi\source\repos\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.pdb
