@@ -159,13 +159,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DAILiesController.cs" />
+    <Compile Include="Controllers\DaiLyController.cs" />
     <Compile Include="Controllers\GiaiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KetQuaController.cs" />
     <Compile Include="Controllers\PhanPhoiController.cs" />
     <Compile Include="Controllers\PhieuThuController.cs" />
-    <Compile Include="Controllers\SOLUONGDANGKiesController.cs" />
-    <Compile Include="Controllers\VESOesController.cs" />
+    <Compile Include="Controllers\SoLuongDangKyController.cs" />
+    <Compile Include="Controllers\VeSoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -387,6 +388,9 @@
     <Content Include="Views\PhieuThu\Create.cshtml" />
     <Content Include="Views\PhieuThu\Edit.cshtml" />
     <Content Include="Views\PhieuThu\Index.cshtml" />
+    <Content Include="Views\KetQua\Create.cshtml" />
+    <Content Include="Views\KetQua\Edit.cshtml" />
+    <Content Include="Views\KetQua\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -21,10 +21,17 @@ namespace Model.DAO
             return db.GIAIs.SingleOrDefault(x => x.MAGIAI == MaGiai);
         }
 
+       
+        public List<GIAI> GetAll()
+        {
+            return db.GIAIs.ToList();
+        }
+
         public GIAI ViewDetail(int MaGiai)
         {
             return db.GIAIs.Find(MaGiai);
         }
+
         public IEnumerable<GIAI> listAllPaging(string searchString, int page, int pageSize)
         {
             IQueryable<GIAI> model = db.GIAIs;

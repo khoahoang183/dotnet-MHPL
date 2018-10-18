@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="DAO\DaiLyDAO.cs" />
     <Compile Include="DAO\GiaiDAO.cs" />
+    <Compile Include="DAO\KetQuaDAO.cs" />
     <Compile Include="DAO\PhanPhoiDAO.cs" />
     <Compile Include="DAO\PhieuThuDAO.cs" />
     <Compile Include="DAO\SoLuongDangKyDAO.cs" />
