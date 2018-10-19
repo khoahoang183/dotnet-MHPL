@@ -159,6 +159,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CongNoController.cs" />
     <Compile Include="Controllers\DaiLyController.cs" />
     <Compile Include="Controllers\GiaiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -391,6 +392,7 @@
     <Content Include="Views\KetQua\Create.cshtml" />
     <Content Include="Views\KetQua\Edit.cshtml" />
     <Content Include="Views\KetQua\Index.cshtml" />
+    <Content Include="Views\CongNo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
