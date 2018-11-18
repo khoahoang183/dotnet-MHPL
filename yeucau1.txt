@@ -1,0 +1,40 @@
+...Khoa Hoàng: 
+View + Giai Controller (Thêm - Sua - Khóa - Search - Loading phân trang (10 object / trang))
+
+...Khoa Tran: 
+Daily Controller (Thêm - Sua - Khóa - Search - Loading phân trang (10 object / trang))
+	- insert tình trang luôn = 1
+	- Search theo Tên DL
+SoLuongDangKy Controller (Thêm - Sua - Khóa - Search - Loading phân trang (10 object / trang))
+	- Mã dai lý khi insert là combobox
+	- sldangky nhap tay
+	- Search theo Ngày
+...Vi
+VeSo Controller (Thêm - Sua - Khóa - Loading phân trang (10 object / trang))
+	- insert tình trang luôn = 1
+	- search theo Tinh
+LoaiVeSo Controller (Thêm - S?a - Khóa - Loading phân trang (10 object / trang))
+	- insert tình trang luôn = 1
+	- search theo ngày và load theo giai tang dan
+	ví du 
+		- giai 1: 21321312
+		- giai 2: 3213123213
+		- ............	
+Luân: PhanPhoi Controller (Thêm - Sua - Khóa - Loading phân trang (10 object / trang))
+	- moi lan load PhanPhoi/Insert lên phai tính  theo công thuc và gán vào ô SLGiao (giong nhu hint text)
+	- insert tình trang luôn = 1
+	- search theo Ngày
+
+Chú ý chung
+- code trong Project/QuanLyBanVeSo
+- can viet procedure se vào /Database/QLVS_Proc_tên
+- load form table phai theo dúng ID nhu bai mau, ko xài form có san trong MVC
+- Deadline: 22h ngày 11 tháng 10 nam 2018
+- add form theo render body _Layouts
+ví d?:	
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}	
+- cách dat tên:
+vidu DAO: TaiKhoanDAO
