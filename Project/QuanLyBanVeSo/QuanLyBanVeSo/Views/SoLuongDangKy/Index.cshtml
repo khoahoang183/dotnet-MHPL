@@ -21,7 +21,7 @@
                     <div class="form-group">
                         @using (Html.BeginForm("Index", "SoLuongDangKy", FormMethod.Get))
                         {
-                            <label>Nhập Mã Đại Lý:</label>
+                            <label>Nhập Đại Lý:</label>
                             <input type="text" , name="searchString">
                             <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
                         }
@@ -32,7 +32,7 @@
                     <thead>
                         <tr>
                             <th>Mã Số Lượng</th>
-                            <th>Mã Đại Lý</th>
+                            <th>Đại Lý</th>
                             <th>Ngày</th>
                             <th>Số Lượng Đăng Ký</th>
                             <th>Chức Năng</th>
@@ -43,7 +43,7 @@
                         {
                             <tr id="row_@item.MASLDK">
                                 <td> @item.MASLDK</td>
-                                <td> @item.MADL</td>
+                                <td> @item.DAILY.TEN</td>
                                 <td> @item.NGAY</td>
                                 <td> @item.SLDANGKY</td>
                                 <td>

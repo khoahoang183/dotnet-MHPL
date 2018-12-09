@@ -84,13 +84,13 @@ namespace QuanLyBanVeSo.Controllers
         public void SetViewBagGiai(long? selectedID = null)
         {
             var dao = new GiaiDAO();
-            ViewBag.MaGiai = new SelectList(dao.GetAll(), "MaGiai", "MaGiai", selectedID);
+            ViewBag.MaGiai = new SelectList(dao.GetAll(), "MaGiai", "Ten", selectedID);
         }
 
         public void SetViewBagVeSo(long? selectedID = null)
         {
             var dao = new VeSoDAO();
-            ViewBag.MaVS = new SelectList(dao.GetAll(), "MaVS", "MaVS", selectedID);
+            ViewBag.MaVS = new SelectList(dao.GetAll(), "MaVS", "Tinh", selectedID);
         }
 
     }

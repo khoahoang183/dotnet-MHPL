@@ -17,12 +17,15 @@
 
         [Key]
         [Display(Name ="Mã Giải")]
-        
         public int MAGIAI { get; set; }
 
         [StringLength(50)]
         [Display(Name = "Tên Giải")]
         public string TEN { get; set; }
+
+        [Column(TypeName = "money")]
+        [Display(Name = "Tiền Thưởng")]
+        public decimal? TIENTHUONG { get; set; }
 
         [Display(Name = "Tình Trạng")]
         public int? TINHTRANG { get; set; }

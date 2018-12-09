@@ -9,7 +9,6 @@ D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\EntityFramework.SqlServer.xml
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.xml
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\bin\Release\PagedList.Mvc.xml
-D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csprojAssemblyReference.cache
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.csproj.CopyComplete
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Release\Model.dll

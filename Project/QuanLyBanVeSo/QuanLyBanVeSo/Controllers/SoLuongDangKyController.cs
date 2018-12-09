@@ -73,7 +73,7 @@ namespace QuanLyBanVeSo.Controllers
         public void SetViewBag(long? selectedID = null)
         {
             var dao = new DaiLyDAO();
-            ViewBag.MaDL = new SelectList(dao.GetAll(), "MaDL", "MaDL", selectedID);
+            ViewBag.MaDL = new SelectList(dao.GetAll(), "MaDL", "Ten", selectedID);
         }
 
 
