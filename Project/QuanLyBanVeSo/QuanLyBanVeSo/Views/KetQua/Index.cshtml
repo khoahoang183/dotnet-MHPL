@@ -21,7 +21,9 @@
                     <div class="form-group">
                         @using (Html.BeginForm("Index", "KetQua", FormMethod.Get))
                         {
-                            <label>Nhập Mã Số Trúng:</label>
+                            <label>Nhập Ngày:</label>
+                            <input type="date" name="searchDate" >                           
+                            <label>Nhập Số Vé:</label>
                             <input type="text" , name="searchString">
                             <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
                         }

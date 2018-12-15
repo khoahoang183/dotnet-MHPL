@@ -165,6 +165,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KetQuaController.cs" />
     <Compile Include="Controllers\PhanPhoiController.cs" />
+    <Compile Include="Controllers\PhieuChiController.cs" />
     <Compile Include="Controllers\PhieuThuController.cs" />
     <Compile Include="Controllers\SoLuongDangKyController.cs" />
     <Compile Include="Controllers\VeSoController.cs" />
@@ -393,6 +394,9 @@
     <Content Include="Views\KetQua\Edit.cshtml" />
     <Content Include="Views\KetQua\Index.cshtml" />
     <Content Include="Views\CongNo\Index.cshtml" />
+    <Content Include="Views\PhieuChi\Create.cshtml" />
+    <Content Include="Views\PhieuChi\Edit.cshtml" />
+    <Content Include="Views\PhieuChi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

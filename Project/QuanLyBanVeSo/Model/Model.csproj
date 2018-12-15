@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +62,7 @@
     <Compile Include="DAO\GiaiDAO.cs" />
     <Compile Include="DAO\KetQuaDAO.cs" />
     <Compile Include="DAO\PhanPhoiDAO.cs" />
+    <Compile Include="DAO\PhieuChiDAO.cs" />
     <Compile Include="DAO\PhieuThuDAO.cs" />
     <Compile Include="DAO\SoLuongDangKyDAO.cs" />
     <Compile Include="DAO\VeSoDAO.cs" />

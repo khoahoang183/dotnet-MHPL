@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Model.EF;
 using PagedList;
 using System.Data;
+using System.Linq.Expressions;
+using System.Web.UI;
+
 namespace Model.DAO
 {
     public class KetQuaDAO
@@ -25,12 +28,60 @@ namespace Model.DAO
         {
             return db.KETQUAs.Find(MaKetQua);
         }
-        public IEnumerable<KETQUA> listAllPaging(string searchString, int page, int pageSize)
+        
+        public IEnumerable<KETQUA> listAllPaging(DateTime? searchDate,string searchString, int page, int pageSize)
         {
             IQueryable<KETQUA> model = db.KETQUAs;
-            if (!string.IsNullOrEmpty(searchString))
+            List<KETQUA> rs = new List<KETQUA>();
+            List<KETQUA> t = new List<KETQUA>();
+            List<KETQUA> a= model.ToList();
+
+            if (searchDate != null && a.Any())
             {
-                model = model.Where(x => x.SOTRUNG.Contains(searchString));
+                foreach (KETQUA item in a.ToList())
+                {
+                    if (item.NGAY.Equals(searchDate))
+                    {
+                        t.Add(item);
+                    }
+                }
+            }
+            else
+            {
+                foreach (KETQUA item in a.ToList())
+                {
+                    t.Add(item);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(searchString) && a.Any())
+            {            
+                foreach (KETQUA item in a.ToList())
+                {
+                    if (item.SOTRUNG == searchString.Substring(searchString.Length - item.SOTRUNG.Length))
+                    {
+                        rs.Add(item);
+                    }
+                    else if (item.MAGIAI == 1)
+                    {
+                        int c = 0;
+                        for (int i=0;i<searchString.Length;i++)
+                        {
+                            if (searchString[i] == item.SOTRUNG[i])
+                            {
+                                c++;
+                            }
+                        }
+                        if (c>=5)
+                        {
+                            rs.Add(item);
+                        }                    
+                    }
+                }                
+            }
+            if (rs.Any())
+            {
+                model = rs.AsQueryable();
             }
             return model.OrderBy(x => x.MAKQ).ToPagedList(page, pageSize);
         }

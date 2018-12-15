@@ -12,10 +12,10 @@ namespace QuanLyBanVeSo.Controllers
 
     {
         // GET: KetQua
-        public ActionResult Index(string searchString, int page = 1, int pageSize = 8)
+        public ActionResult Index(DateTime? searchDate,string searchString, int page = 1, int pageSize = 8)
         {
-            var dao = new Model.DAO.KetQuaDAO();
-            var model = dao.listAllPaging(searchString, page, pageSize);
+            var dao = new Model.DAO.KetQuaDAO();                             
+            var model = dao.listAllPaging(searchDate, searchString, page, pageSize);
             return View(model);
         }
         [HttpGet]
