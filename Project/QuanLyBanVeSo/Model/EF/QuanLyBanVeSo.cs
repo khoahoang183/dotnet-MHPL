@@ -20,6 +20,7 @@ namespace Model.EF
         public virtual DbSet<PHIEUTHU> PHIEUTHUs { get; set; }
         public virtual DbSet<SOLUONGDANGKY> SOLUONGDANGKies { get; set; }
         public virtual DbSet<VESO> VESOes { get; set; }
+        public virtual DbSet<HOAHONG> HOAHONGs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
