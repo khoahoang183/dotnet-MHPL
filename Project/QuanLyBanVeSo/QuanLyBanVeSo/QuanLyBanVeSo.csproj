@@ -162,6 +162,7 @@
     <Compile Include="Controllers\CongNoController.cs" />
     <Compile Include="Controllers\DaiLyController.cs" />
     <Compile Include="Controllers\GiaiController.cs" />
+    <Compile Include="Controllers\HoaHongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KetQuaController.cs" />
     <Compile Include="Controllers\PhanPhoiController.cs" />
@@ -401,6 +402,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\HoaHong\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
