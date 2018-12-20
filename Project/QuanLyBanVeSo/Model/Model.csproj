@@ -60,6 +60,7 @@
     <Compile Include="DAO\CongNoDAO.cs" />
     <Compile Include="DAO\DaiLyDAO.cs" />
     <Compile Include="DAO\GiaiDAO.cs" />
+    <Compile Include="DAO\HoaHongDAO.cs" />
     <Compile Include="DAO\KetQuaDAO.cs" />
     <Compile Include="DAO\PhanPhoiDAO.cs" />
     <Compile Include="DAO\PhieuChiDAO.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="EF\CONGNO.cs" />
     <Compile Include="EF\DAILY.cs" />
     <Compile Include="EF\GIAI.cs" />
+    <Compile Include="EF\HOAHONG.cs" />
     <Compile Include="EF\KETQUA.cs" />
     <Compile Include="EF\PHANPHOI.cs" />
     <Compile Include="EF\PHIEUCHI.cs" />
