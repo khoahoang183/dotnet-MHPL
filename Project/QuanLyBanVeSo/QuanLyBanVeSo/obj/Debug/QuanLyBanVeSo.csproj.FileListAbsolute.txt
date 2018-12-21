@@ -196,7 +196,6 @@ F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\Microsoft.AI.D
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\Microsoft.AI.WindowsServer.xml
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\Microsoft.AI.Web.xml
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csprojResolveAssemblyReference.cache
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.dll
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.pdb
 D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\ApplicationInsights.config
@@ -403,3 +402,7 @@ F:\GitHub\MHPL\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.
 F:\GitHub\MHPL\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csproj.CopyComplete
 F:\GitHub\MHPL\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.dll
 F:\GitHub\MHPL\MHPL\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.pdb
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\bin\Model.dll.config
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csprojAssemblyReference.cache
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csproj.CoreCompileInputs.cache
+F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\QuanLyBanVeSo\obj\Debug\QuanLyBanVeSo.csproj.CopyComplete
