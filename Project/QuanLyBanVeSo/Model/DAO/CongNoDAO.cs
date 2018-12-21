@@ -25,11 +25,12 @@ namespace Model.DAO
             {
                 long congno = 0;
                 var PHANPHOIitems = db.PHANPHOIs.Where(x => x.MADL == item.MADL).Where(x => x.SLBAN != 0).ToList();
-                var PHIEUTHUitems = db.PHIEUTHUs.Where(x => x.MADL == item.MADL).ToList();
+                var PHIEUTHUitems = db.PHIEUTHUs.Where(x => x.MADL == item.MADL).ToList();                
                 if (PHANPHOIitems != null)
-                    foreach (var itema in PHANPHOIitems)
+                foreach (var itema in PHANPHOIitems)
                 {
-                    congno += Convert.ToInt64(itema.SLBAN * (1.0 - 0.1) * 10000);
+                    double tilehoahong = db.HOAHONGs.Where(x => x.TINHTRANG == 1).Where(x => x.NGAY <= itema.NGAY).OrderByDescending(x => x.NGAY).First().TILE;
+                    congno += Convert.ToInt64(itema.SLBAN * (1.0 - tilehoahong) * 10000);
                 }
                 if (PHIEUTHUitems != null)
                 foreach (var itemb in PHIEUTHUitems)

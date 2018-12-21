@@ -54,6 +54,7 @@ namespace Model.DAO
             try
             {
                 var hoahong = db.HOAHONGs.Where(g => g.MAHH == entity.MAHH).SingleOrDefault();
+                hoahong.NGAY = entity.NGAY;
                 hoahong.TILE = entity.TILE;
                 hoahong.TINHTRANG = entity.TINHTRANG;
                 db.SaveChanges();
