@@ -1,0 +1,70 @@
+﻿@model PagedList.IPagedList<Model.EF.HOAHONG>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Danh Sách Hoa Hồng</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <!--------------------------------------------- Search And Add ------------------------------------------------->
+                    <div class="form-group">
+                        @using (Html.BeginForm("Index", "HoaHong", FormMethod.Get))
+                        {
+                            <label>Nhập Tỉ lệ:</label>
+                            <input type="text" , name="searchString">
+                            <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+                        }
+                        <a href="/HoaHong"><button type="submit" class="btn btn-primary">Làm Mới</button></a>
+                        <a href="/HoaHong/Create"><button type="button" class="btn btn-warning">Thêm Mới</button></a>
+                    </div>
+                    <!------------------------------------------- Loading Edit Delete ----------------------------------------------->
+                    <thead>
+                        <tr>
+                            <th>Mã Hoa Hồng</th>
+                            <th>Ngày áp dụng</th>
+                            <th>Tỉ lệ</th>
+                            <th>Tình Trạng</th>
+                            <th>Chức Năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.MAHH">
+                                <td> @item.NGAY</td>
+                                <td> @item.TILE</td>
+                                <td> @item.TINHTRANG</td>
+                                <td>
+                                    <a href="/HoaHong/Edit/@item.MAHH"><button type="button" class="btn btn-primary">Sửa</button></a>
+                                    <button type="button" class="btn btn-warning">
+                                        @Ajax.ActionLink("Khóa","Delete",new { @id=item.MAHH},new AjaxOptions
+                                   {
+                                       Confirm="Bạn có muốn khóa bản ghi này?",
+                                       //OnComplete = "$('#row_" + @item.MAHH + "').remove()",
+                                       HttpMethod ="Delete"
+                                   })
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+            <!-- /.table-responsive -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>

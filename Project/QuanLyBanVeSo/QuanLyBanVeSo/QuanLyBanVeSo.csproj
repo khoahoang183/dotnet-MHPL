@@ -398,11 +398,13 @@
     <Content Include="Views\PhieuChi\Create.cshtml" />
     <Content Include="Views\PhieuChi\Edit.cshtml" />
     <Content Include="Views\PhieuChi\Index.cshtml" />
+    <Content Include="Views\HoaHong\Index.cshtml" />
+    <Content Include="Views\HoaHong\Create.cshtml" />
+    <Content Include="Views\HoaHong\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\HoaHong\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

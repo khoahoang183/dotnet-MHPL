@@ -43,6 +43,7 @@ namespace Model.DAO
         public long Insert(HOAHONG entity)
         {
             entity.TINHTRANG = 1;
+            entity.NGAY = DateTime.Today;
             db.HOAHONGs.Add(entity);
             db.SaveChanges();
             return entity.MAHH;
