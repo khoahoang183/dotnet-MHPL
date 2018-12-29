@@ -77,3 +77,4 @@ F:\GitHub\MHPL\Project\QuanLyBanVeSo\Model\bin\Debug\System.Web.WebPages.Deploym
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csprojAssemblyReference.cache
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 F:\Github stuffs\MHPLtrue\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csproj.CopyComplete
+D:\SGU\00_NOW\_PHAN_MEM_QUAN_LY\DoAnPhanLop\MHPL\Project\QuanLyBanVeSo\Model\obj\Debug\Model.csprojAssemblyReference.cache
